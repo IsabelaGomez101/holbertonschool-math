@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
+#include <math.h>
 
 /**
  * struct complex - structure containing two doubles
@@ -21,5 +22,6 @@ typedef struct complex
 
 void display_complex_number(complex c);
 complex conjugate(complex c);
+double modulus(complex c);
 
 #endif
