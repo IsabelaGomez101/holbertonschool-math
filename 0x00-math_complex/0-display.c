@@ -8,7 +8,22 @@
 void display_complex_number(complex c)
 {
 	if (c.re == 0 && c.im == 0)
-	return;
+	{
+	}
+	else if (c.im == 1)
+	{
+	if (c.re != 0)
+	printf("%.0f + i\n", c.re);
+	else
+	printf("i\n");
+	}
+	else if (c.im == -1)
+	{
+	if (c.re != 0)
+	printf("%.0f - i\n", c.re);
+	else
+	printf("-i\n");
+	}
 	else if (c.im == 0 && c.re != 0)
 	printf("%.0f\n", c.re);
 	else if (c.re == 0 && c.im != 0)
